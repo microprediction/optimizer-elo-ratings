@@ -7,7 +7,7 @@ A choice of python package (such as scipy.optimize, ax-platform, hyperopt, never
 
 ### View Leaderboards
 
-See the current [overall leaderboard](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards/overall) or drill into specific [leaderboards](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards) broken down by dimension of the problem, and the number of function evaluations allowed. 
+See the current [overall leaderboard](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards/overall) or drill into specific [leaderboards](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards) broken down by dimension of the problem, and the number of function evaluations allowed. Be aware that some of these are yet to reach equilibrium. 
 
 ### Create your own shortlist
 

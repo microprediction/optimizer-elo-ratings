@@ -3,7 +3,7 @@ Assigns Elo Ratings to Python Global Optimizers, using the [HumpDay](https://git
 
 ### View Leaderboards
 
-See [leaderboards](https://github.com/microprediction/optimizer-elo-ratings/tree/main/optimizer_elo_ratings/leaderboards) broken down by dimension of the problem, and the number of function evaluations allowed. 
+See [leaderboards](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards) broken down by dimension of the problem, and the number of function evaluations allowed. 
 
 
 

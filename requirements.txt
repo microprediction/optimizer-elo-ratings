@@ -1,0 +1,3 @@
+humpday
+getjson
+numpy

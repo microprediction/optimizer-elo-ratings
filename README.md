@@ -1,6 +1,9 @@
 # optimizer-elo-ratings
-Assigns Elo Ratings to Python Global Optimizers, using the [HumpDay](https://github.com/microprediction/humpday) package. 
+Assigns Elo Ratings to global derivative-free Python Global Optimizer strategies, using the [HumpDay](https://github.com/microprediction/humpday) package. 
 
+### What's a strategy?
+
+A choice of python package (such as scipy.optimize, ax-platform, hyperopt, nevergrad, optuna, platypus, pymoo, pySOT or skopt) together with a fixing of additional choices (such as selection of method, choice of parameters etc). 
 
 ### View Leaderboards
 

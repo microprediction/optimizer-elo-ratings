@@ -9,7 +9,7 @@ import random
 import string
 
 INITIAL_ELO = 1600
-N_DIM_CHOICES = [3]
+N_DIM_CHOICES = [3, 8, 13]
 N_TRIALS_CHOICES = [ 130 ]
 
 CAN_BLOW_AWAY = False

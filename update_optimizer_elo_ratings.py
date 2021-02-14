@@ -9,8 +9,8 @@ import random
 import string
 
 INITIAL_ELO = 1600
-N_DIM_CHOICES = [3, 8, 13]
-N_TRIALS_CHOICES = [ 130 ]
+N_DIM_CHOICES = [ 13 ]
+N_TRIALS_CHOICES = [ 210 ]
 
 CAN_BLOW_AWAY = False
 
@@ -65,7 +65,7 @@ def update_optimizer_elo_ratings_once():
     for category in relevant_categories:
         n_dim = game_result['n_dim']
         n_trials = game_result['n_trials']
-        label = category+'_d'+str(n_dim).zfill(2)+'_n'+str(n_trials) if category is not 'overall' else 'overall'
+        label = category+'_d'+str(n_dim).zfill(2)+'_n'+str(n_trials) if category != 'overall' else 'overall'
         LEADERBOARD_PATH = OPTIMIZER_ELO_PATH+os.path.sep+'leaderboards'+os.path.sep+label
         try:
             os.makedirs(LEADERBOARD_PATH)

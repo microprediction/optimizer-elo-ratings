@@ -9,8 +9,8 @@ import random
 import string
 
 INITIAL_ELO = 1600
-N_DIM_CHOICES = [ 13 ]
-N_TRIALS_CHOICES = [ 210 ]
+N_DIM_CHOICES = [ 5, 13 ]
+N_TRIALS_CHOICES = [ 210, 340 ]
 
 CAN_BLOW_AWAY = False
 

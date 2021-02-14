@@ -1,1 +1,1 @@
-Please see the individual leaderboards ([up one](https://github.com/microprediction/optimizer-elo-ratings/new/main/results/leaderboards)). 
+Please see the individual leaderboards in([/results/leaderboards](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards)). 

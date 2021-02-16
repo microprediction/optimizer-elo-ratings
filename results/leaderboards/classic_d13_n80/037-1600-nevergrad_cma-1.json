@@ -1,1 +1,0 @@
-{"name": "nevergrad_cma_cube", "package": "nevergrad", "strategy": "nevergrad_cma", "traceback": "Optimizer returned None on deap_on_cube"}

@@ -1,1 +1,0 @@
-{"n_dim": 3, "n_trials": 130, "objective": "rosenbrock_modified_on_cube", "white": "nevergrad_cma", "black": "platypus_nsgaii", "traceback": ["passing", "passing"], "best_val": [null, null], "best_x": [null, null], "feval_count": [null, null], "n_trials_instructed": [null, null], "passing": [false, null], "completed": false, "winner": "incomplete", "points": null}

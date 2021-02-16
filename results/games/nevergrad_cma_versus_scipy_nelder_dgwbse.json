@@ -1,1 +1,0 @@
-{"n_dim": 5, "n_trials": 130, "objective": "schwefel_on_cube", "white": "nevergrad_cma", "black": "scipy_nelder", "traceback": ["passing", "passing"], "best_val": [null, null], "best_x": [null, null], "feval_count": [null, null], "n_trials_instructed": [null, null], "passing": [false, null], "completed": false, "winner": "incomplete", "points": null}

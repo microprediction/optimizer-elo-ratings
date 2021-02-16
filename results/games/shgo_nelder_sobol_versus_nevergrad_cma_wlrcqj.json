@@ -1,1 +1,0 @@
-{"n_dim": 3, "n_trials": 130, "objective": "rosenbrock_on_cube", "white": "shgo_nelder_sobol", "black": "nevergrad_cma", "traceback": ["passing", "passing"], "best_val": [200268.6031226257, null], "best_x": [[0.55, 0.55, 0.55], null], "feval_count": [89, 89], "n_trials_instructed": [130, 89], "passing": [true, false], "completed": false, "winner": "incomplete", "points": null}

@@ -9,12 +9,12 @@ import random
 import string
 
 INITIAL_ELO = 1600
-N_DIM_CHOICES = [ 3 ]
+N_DIM_CHOICES = [ 2, 3 ]
 N_TRIALS_CHOICES = [ 50, 80, 130, 210, 340 ]
 
 CAN_BLOW_AWAY = True
 
-# To include specific Elo ratings, add another category - if necessary with a singleton set of objectives
+# To include specific Elo ratings,
 CATEGORIES = {'classic':CLASSIC_OBJECTIVES}
 cand = set()
 for cat, objs in CATEGORIES.items():

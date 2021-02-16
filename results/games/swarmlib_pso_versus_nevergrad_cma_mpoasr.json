@@ -1,1 +1,0 @@
-{"n_dim": 3, "n_trials": 130, "objective": "ackley_on_cube", "white": "swarmlib_pso", "black": "nevergrad_cma", "traceback": ["passing", "passing"], "best_val": [17.698606935969817, null], "best_x": [[0.9305270049752835, 0.0], null], "feval_count": [99, 99], "n_trials_instructed": [91, 99], "passing": [true, false], "completed": false, "winner": "incomplete", "points": null}

@@ -1,0 +1,1 @@
+{"n_dim": 2, "n_trials": 30, "objective": "cross_on_cube", "white": "shgo_slsqp_sobol", "black": "scipy_slsqp", "traceback": ["passing", "passing"], "best_val": [-2.0625828, null], "best_x": [[0.375, 0.375], null], "feval_count": [45, null], "n_trials_instructed": [6, null], "passing": [true, null], "completed": false, "winner": "incomplete", "points": null}

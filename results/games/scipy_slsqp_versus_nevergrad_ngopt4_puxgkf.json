@@ -1,0 +1,1 @@
+{"n_dim": 2, "n_trials": 130, "objective": "landscapes_combo1_on_cube", "white": "scipy_slsqp", "black": "nevergrad_ngopt4", "traceback": ["passing", "passing"], "best_val": [1554887144072.217, null], "best_x": [[0.0, 0.0], null], "feval_count": [4, 4], "n_trials_instructed": [130, 4], "passing": [true, false], "completed": false, "winner": "incomplete", "points": null}

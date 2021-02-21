@@ -9,10 +9,10 @@ import random
 import string
 
 INITIAL_ELO = 1600
-N_DIM_CHOICES = [ 2, 3, 5, 8 ]
-N_TRIALS_CHOICES = [ 30, 50, 80, 130, 210, 340 ]
+N_DIM_CHOICES = [ 13 ]
+N_TRIALS_CHOICES = [ 80, 130, 210, 340 ]
 
-CAN_BLOW_AWAY = False
+CAN_BLOW_AWAY = True
 
 # To include specific Elo ratings,
 CATEGORIES = {'classic':CLASSIC_OBJECTIVES}

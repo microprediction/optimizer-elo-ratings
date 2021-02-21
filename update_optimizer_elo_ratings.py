@@ -9,7 +9,7 @@ import random
 import string
 
 INITIAL_ELO = 1600
-N_DIM_CHOICES = [ 13 ]
+N_DIM_CHOICES = [ 13, 21, 34 ]
 N_TRIALS_CHOICES = [ 80, 130, 210, 340 ]
 
 CAN_BLOW_AWAY = True
@@ -27,12 +27,24 @@ def get_random_string(n):
     return ''.join(random.choice(letters) for i in range(n))
 
 
+def fast_in_medium_dim(name):
+    """ 13-34 dimensions with reasonable speed """
+    # Eliminates most surrogate methods, but it can be efficient to get the rest in
+    # equilibrium first before testing the slow ones.
+    SLOW_POKES = ['shgo','bayesopt','pysot','skopt_gp','ultraopt_gbrt','ax_default','cmaes']
+    if any([s in name for s in SLOW_POKES]):
+        return False
+    return True
+
+
 def update_optimizer_elo_ratings_once():
     # Arranges a head-to-head contest between two optimizers
     # Based on this the overall Elo rating is updated, as are sub-category elo ratings pertaining to
     # the choice of dimension, number of trials, and the set of objective functions
 
-    game_result = random_optimizer_game(optimizers=OPTIMIZERS, objectives=CANDIDATE_OBJECTIVES,
+    high_dim_optimizers = [o for o in OPTIMIZERS if fast_in_medium_dim(o.__name__)]
+
+    game_result = random_optimizer_game(optimizers=high_dim_optimizers, objectives=CANDIDATE_OBJECTIVES,
                                         n_dim_choices=N_DIM_CHOICES, n_trials_choices=N_TRIALS_CHOICES,
                                         tol=0.001, announce=True )
     print(' Result...')

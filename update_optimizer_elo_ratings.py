@@ -1,5 +1,5 @@
 from humpday.comparison.eloratings import optimizer_population_elo_update, random_optimizer_game
-from humpday.objectives.allobjectives import CLASSIC_OBJECTIVES
+from humpday.objectives.allobjectives import CLASSIC_OBJECTIVES, PORTFOLIO_OBJECTIVES
 from humpday.optimizers.alloptimizers import OPTIMIZERS
 from pprint import pprint
 import json
@@ -9,13 +9,14 @@ import random
 import string
 
 INITIAL_ELO = 1600
-N_DIM_CHOICES = [ 13, 21, 34 ]
-N_TRIALS_CHOICES = [ 80, 130, 210, 340 ]
+N_DIM_CHOICES = [ 2,3,5,8,13,21,34, 55, 89 ]
+N_TRIALS_CHOICES = [ 130, 210, 340, 550 ]
 
 CAN_BLOW_AWAY = True
 
-# To include specific Elo ratings,
-CATEGORIES = {'classic':CLASSIC_OBJECTIVES}
+# To include specific Elo ratings...
+CATEGORIES = {'classic':CLASSIC_OBJECTIVES,
+              'portfolio':PORTFOLIO_OBJECTIVES}
 cand = set()
 for cat, objs in CATEGORIES.items():
     cand = cand.union(objs)
@@ -42,10 +43,17 @@ def update_optimizer_elo_ratings_once():
     # Based on this the overall Elo rating is updated, as are sub-category elo ratings pertaining to
     # the choice of dimension, number of trials, and the set of objective functions
 
-    high_dim_optimizers = [o for o in OPTIMIZERS if fast_in_medium_dim(o.__name__)]
+    if np.random.rand()<0.5:
+        selected_optimizers = [o for o in OPTIMIZERS if fast_in_medium_dim(o.__name__)]
+        n_dim_choices = [ n for n in N_DIM_CHOICES if n>=13 ]
+        n_trials_choices = [80, 130, 210, 340, 550 ]
+    else:
+        selected_optimizers = OPTIMIZERS
+        n_dim_choices = [ n for n in N_DIM_CHOICES if n < 13 ]
+        n_trials_choices = [ 80, 130, 210]
 
-    game_result = random_optimizer_game(optimizers=high_dim_optimizers, objectives=CANDIDATE_OBJECTIVES,
-                                        n_dim_choices=N_DIM_CHOICES, n_trials_choices=N_TRIALS_CHOICES,
+    game_result = random_optimizer_game(optimizers=selected_optimizers, objectives=CANDIDATE_OBJECTIVES,
+                                        n_dim_choices=n_dim_choices, n_trials_choices=n_trials_choices,
                                         tol=0.001, announce=True )
     print(' Result...')
     pprint(game_result)

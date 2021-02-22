@@ -1,0 +1,1 @@
+{"n_dim": 3, "n_trials": 80, "objective": "rosenbrock_modified_on_cube", "white": "bayesopt_ei", "black": "bayesopt_ucb", "traceback": ["passing", "passing"], "best_val": [3.81, 3.81], "best_x": [[0.0, 0.0, 1.0], [0.0, 0.0, 1.0]], "feval_count": [80, 28], "n_trials_instructed": [80, 80], "passing": [true, true], "completed": true, "points": 0.5, "winner": "draw", "loser": "draw"}

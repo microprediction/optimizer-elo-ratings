@@ -12,6 +12,11 @@ INITIAL_ELO = 1600
 N_DIM_CHOICES = [ 2,3,5,8,13,21,34, 55, 89 ]
 N_TRIALS_CHOICES = [ 130, 210, 340, 550 ]
 
+# TEMPORARY HACK
+if False:
+    N_DIM_CHOICES = [ 8, 55 ]
+    N_TRIALS_CHOICES = [ 130, 550 ]
+
 CAN_BLOW_AWAY = True
 
 # To include specific Elo ratings...
@@ -52,7 +57,7 @@ def update_optimizer_elo_ratings_once():
         n_dim_choices = [ n for n in N_DIM_CHOICES if n < 13 ]
         n_trials_choices = [ 80, 130, 210]
 
-    game_result = random_optimizer_game(optimizers=selected_optimizers, objectives=CANDIDATE_OBJECTIVES,
+    game_result = random_optimizer_game(optimizers=selected_optimizers, objectives=PORTFOLIO_OBJECTIVES,
                                         n_dim_choices=n_dim_choices, n_trials_choices=n_trials_choices,
                                         tol=0.001, announce=True )
     print(' Result...')

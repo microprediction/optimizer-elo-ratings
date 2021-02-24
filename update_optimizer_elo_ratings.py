@@ -13,11 +13,11 @@ N_DIM_CHOICES = [ 2,3,5,8,13,21,34, 55, 89 ]
 N_TRIALS_CHOICES = [ 130, 210, 340, 550 ]
 
 # TEMPORARY HACK
-if False:
+if True:
     N_DIM_CHOICES = [ 8, 55 ]
     N_TRIALS_CHOICES = [ 130, 550 ]
 
-CAN_BLOW_AWAY = True
+CAN_BLOW_AWAY = False
 
 # To include specific Elo ratings...
 CATEGORIES = {'classic':CLASSIC_OBJECTIVES,

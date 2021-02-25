@@ -1,5 +1,5 @@
 from humpday.comparison.eloratings import optimizer_population_elo_update, random_optimizer_game
-from humpday.objectives.allobjectives import CLASSIC_OBJECTIVES, PORTFOLIO_OBJECTIVES
+from humpday.objectives.allobjectives import CLASSIC_OBJECTIVES, PORTFOLIO_OBJECTIVES, HORSE_OBJECTIVES, OBJECTIVES
 from humpday.optimizers.alloptimizers import OPTIMIZERS
 from pprint import pprint
 import json
@@ -21,7 +21,9 @@ CAN_BLOW_AWAY = False
 
 # To include specific Elo ratings...
 CATEGORIES = {'classic':CLASSIC_OBJECTIVES,
-              'portfolio':PORTFOLIO_OBJECTIVES}
+              'portfolio':PORTFOLIO_OBJECTIVES,
+              'horse':HORSE_OBJECTIVES,
+              'all':OBJECTIVES}
 cand = set()
 for cat, objs in CATEGORIES.items():
     cand = cand.union(objs)

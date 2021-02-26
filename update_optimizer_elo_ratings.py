@@ -17,7 +17,7 @@ if True:
     N_DIM_CHOICES = [ 8, 55 ]
     N_TRIALS_CHOICES = [ 130, 550 ]
 
-CAN_BLOW_AWAY = False
+CAN_BLOW_AWAY = True
 
 # To include specific Elo ratings...
 CATEGORIES = {'classic':CLASSIC_OBJECTIVES,

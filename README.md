@@ -1,4 +1,4 @@
-# optimizer-elo-ratings
+# optimizer-elo-ratings ([ARTICLE](https://www.microprediction.com/blog/humpday))
 Assigns [Elo ratings](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards/overall) to global derivative-free Python global optimization "strategies", using the [HumpDay](https://github.com/microprediction/humpday) package. 
 
 

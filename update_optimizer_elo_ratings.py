@@ -7,6 +7,7 @@ import os
 import numpy as np
 import random
 import string
+import datetime
 
 INITIAL_ELO = 1600
 N_DIM_CHOICES = [ 2,3,5,8,13,21,34, 55, 89 ]
@@ -39,7 +40,7 @@ def fast_in_medium_dim(name):
     """ 13-34 dimensions with reasonable speed """
     # Eliminates most surrogate methods, but it can be efficient to get the rest in
     # equilibrium first before testing the slow ones.
-    SLOW_POKES = ['shgo','bayesopt','pysot','skopt_gp','ultraopt_gbrt','ax_default','cmaes']
+    SLOW_POKES = ['shgo','bayesopt','pysot','skopt_gp','ultraopt_gbrt','ax_default','cmaes','hebo']
     if any([s in name for s in SLOW_POKES]):
         return False
     return True
@@ -49,6 +50,8 @@ def update_optimizer_elo_ratings_once():
     # Arranges a head-to-head contest between two optimizers
     # Based on this the overall Elo rating is updated, as are sub-category elo ratings pertaining to
     # the choice of dimension, number of trials, and the set of objective functions
+
+    print(datetime.datetime.now().strftime('Started at %H:%M:%S on %d, %b %Y'))
 
     if np.random.rand()<0.5:
         selected_optimizers = [o for o in OPTIMIZERS if fast_in_medium_dim(o.__name__)]

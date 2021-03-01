@@ -15,8 +15,8 @@ N_TRIALS_CHOICES = [ 130, 210, 340, 550 ]
 
 # TEMPORARY HACK
 if True:
-    N_DIM_CHOICES = [ 8, 55 ]
-    N_TRIALS_CHOICES = [ 130, 550 ]
+    N_DIM_CHOICES = [ 3, 5, 8 ]
+    N_TRIALS_CHOICES = [ 50, 80, 130 ]
 
 CAN_BLOW_AWAY = True
 

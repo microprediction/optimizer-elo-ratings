@@ -46,10 +46,14 @@ def fast_in_medium_dim(name):
     return True
 
 
-def update_optimizer_elo_ratings_once():
+def update_optimizer_elo_ratings_once(pattern=None):
     # Arranges a head-to-head contest between two optimizers
     # Based on this the overall Elo rating is updated, as are sub-category elo ratings pertaining to
     # the choice of dimension, number of trials, and the set of objective functions
+    """
+    :param pattern:  string matching at least one optimizer
+    :return:
+    """
 
     print(datetime.datetime.now().strftime('Started at %H:%M:%S on %d, %b %Y'))
 
@@ -64,7 +68,7 @@ def update_optimizer_elo_ratings_once():
 
     game_result = random_optimizer_game(optimizers=selected_optimizers, objectives=PORTFOLIO_OBJECTIVES,
                                         n_dim_choices=n_dim_choices, n_trials_choices=n_trials_choices,
-                                        tol=0.001, announce=True )
+                                        tol=0.001, announce=True, pattern=pattern )
     print(' Result...')
     pprint(game_result)
 

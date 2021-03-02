@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../humpday/.idea/humpday.iml" filepath="$PROJECT_DIR$/../humpday/.idea/humpday.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/optimizer-elo-ratings.iml" filepath="$PROJECT_DIR$/.idea/optimizer-elo-ratings.iml" />
     </modules>
   </component>

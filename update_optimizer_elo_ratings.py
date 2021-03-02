@@ -56,12 +56,14 @@ def update_optimizer_elo_ratings_once(pattern=None):
     """
 
     print(datetime.datetime.now().strftime('Started at %H:%M:%S on %d, %b %Y'))
-
-    if np.random.rand()<0.5:
+    found = False
+    if np.random.rand()<0.5: # Hack
         selected_optimizers = [o for o in OPTIMIZERS if fast_in_medium_dim(o.__name__)]
         n_dim_choices = [ n for n in N_DIM_CHOICES if n>=13 ]
         n_trials_choices = [80, 130, 210, 340, 550 ]
-    else:
+        found = len(selected_optimizers)>=2 and len(n_dim_choices)>=1
+
+    if not found:
         selected_optimizers = OPTIMIZERS
         n_dim_choices = [ n for n in N_DIM_CHOICES if n < 13 ]
         n_trials_choices = [ 80, 130, 210]

@@ -6,6 +6,7 @@ from pprint import pprint
 THIS_PATH = os.path.dirname(os.path.realpath(__file__))
 OPTIMIZER_ELO_PATH = THIS_PATH + os.path.sep + 'results'
 
+
 def load_all_games():
     def load_json(file):
         with open(os.path.join(OPTIMIZER_ELO_PATH, file), "r") as f:
@@ -21,17 +22,20 @@ def load_all_games():
     )
     return leaderboard_jsons               # "name" and "rating" keys are important
 
+
 def get_html_table_rows(data):
     data_dict = {}
-    for name, rating in zip(data["name"], data["rating"]):
-        data_dict[name] = rating
+    for name, rating, count, active in zip(data["name"], data["rating"], data["count"], data["active"]):
+        data_dict[name] = (rating,count, active)
 
     data_dict = dict(sorted(data_dict.items(), key=lambda item: item[1], reverse=True))
 
-    html = "<tr><th>Name</th><th>Rating</th></tr>"
-    for name, rating in data_dict.items():
-        html += f"<tr><td>{name}</td><td>{round(rating, 3)}</td></tr>"
+    html = "<tr><th>Name</th><th>Rating</th><th>Games</th><th>Active</th> </tr>"
+    for name, (rating,count,active) in data_dict.items():
+        active_str = 'yes' if active else 'no'
+        html += f"<tr><td>{name}</td><td>{round(rating, 3)}</td><td>{round(count, 0)}</td><td>{active_str}</td></tr>"
     return html
+
 
 # For overall.json
 def get_overall_html_str(file, data, navbar):

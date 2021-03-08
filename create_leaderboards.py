@@ -57,15 +57,16 @@ def get_html_str(file, data, navbar):
     parse_file = file.replace(".json", "")
     args = parse_file.split("_")
 
+
     return f"""<html>
 <head><link rel="stylesheet" href="../style.css" type="text/css"></head>
 <body>
     <div class="left">{navbar}</div>
     <div class="right">
-        <h1>Optimizer Elo Leaderboard for {file}</h1>
-        <h3>Set of optimizers: {args[0]}</h3>
-        <h3>Number of dimensions: {args[1][1:]}</h3>
-        <h3>Max number of evaluations: {args[2][1:]}</h3>
+        <h1>Optimizer Elo Ratings</h1>
+        <h3>Class of objective functions: {args[0]}</h3>
+        <h3>Dimension {args[1][1:]}</h3>
+        <h3>Function evaluation limit: {args[2][1:]}</h3>
         <table class="default-table">
             {get_html_table_rows(data)}
         </table>

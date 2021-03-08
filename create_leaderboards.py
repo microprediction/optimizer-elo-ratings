@@ -78,7 +78,7 @@ def get_html_navbar(json_names):
     div = "<h3>Leaderboards</h3>"
     for name in json_names:
         name_html = name.replace(".json", ".html")
-        div += f"<a href='{name_html}'>{name}</a>"
+        div += f"<a href='{name_html}'>{name.replace('.json','')}</a>"
     return div
 
 # For index.html

@@ -16,8 +16,7 @@ A choice of python package (such as scipy.optimize, ax-platform, hyperopt, never
 
 ### Create your own shortlist
 
-See the [HumpDay](https://github.com/microprediction/humpday) package for simple ways to select optimizers based on their performance on your problems, not ours.  
-
+[HumpDay](https://github.com/microprediction/humpday) contains scripts for choosing optimizers based on your own problems.   
 
 
 ### Contribute

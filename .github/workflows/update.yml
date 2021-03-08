@@ -36,16 +36,6 @@ jobs:
         run: |
           python update_optimizer_elo_ratings.py
    
-   
-      - name: update elo ratings and test
-        run: |
-          python update_optimizer_elo_ratings.py
-   
-   
-      - name: update elo ratings and test
-        run: |
-          python update_optimizer_elo_ratings.py
-   
       - name: create lb
         run: |
           python create_leaderboards.py

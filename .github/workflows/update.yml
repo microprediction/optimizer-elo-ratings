@@ -46,6 +46,9 @@ jobs:
         run: |
           python update_optimizer_elo_ratings.py
    
+      - name: create lb
+        run: |
+          python create_leaderboards.py
    
       - name: Show git status
         run: | 

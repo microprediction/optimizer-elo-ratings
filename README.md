@@ -1,5 +1,5 @@
 # [Optimizer Elo Ratings](https://microprediction.github.io/optimizer-elo-ratings/html_leaderboards/overall.html)
-See [article](https://www.microprediction.com/blog/humpday). This repo assigns Elo ratings [json](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards/overall) and [html](https://microprediction.github.io/optimizer-elo-ratings/html_leaderboards/overall.html) to global derivative-free Python global optimization "strategies", using the [HumpDay](https://github.com/microprediction/humpday) package. 
+See [article](https://www.microprediction.com/blog/humpday). This repo assigns Elo ratings ([json](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards/overall) and [html](https://microprediction.github.io/optimizer-elo-ratings/html_leaderboards/overall.html)) to global derivative-free Python global optimization "strategies", using the [HumpDay](https://github.com/microprediction/humpday) package. There's no free lunch. 
 
 
 

@@ -1,5 +1,5 @@
-# optimizer-elo-ratings ([ARTICLE](https://www.microprediction.com/blog/humpday))
-Assigns [Elo ratings](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards/overall) to global derivative-free Python global optimization "strategies", using the [HumpDay](https://github.com/microprediction/humpday) package. 
+# [Optimizer Elo Ratings](https://microprediction.github.io/optimizer-elo-ratings/html_leaderboards/overall.html)
+See [article](https://www.microprediction.com/blog/humpday). This repo assigns [Elo ratings](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards/overall) to global derivative-free Python global optimization "strategies", using the [HumpDay](https://github.com/microprediction/humpday) package. 
 
 
 
@@ -7,7 +7,8 @@ Assigns [Elo ratings](https://github.com/microprediction/optimizer-elo-ratings/t
 
 ### View Leaderboards
 
-See the current [overall leaderboard](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards/overall) or drill into specific [leaderboards](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards) broken down by dimension of the problem, and the number of function evaluations allowed. Be aware that some of these are yet to reach equilibrium. 
+- HTML: [overall leaderboard](https://microprediction.github.io/optimizer-elo-ratings/html_leaderboards/overall.html) 
+- JSON: [leaderboards](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards) 
 
 ### What's a strategy?
 

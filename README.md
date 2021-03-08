@@ -3,7 +3,7 @@ See [article](https://www.microprediction.com/blog/humpday). This repo assigns [
 
 
 
-![](https://i.imgur.com/FCiSrMQ.png)
+![](https://i.imgur.com/WgL7NCC.png)
 
 ### View Leaderboards
 

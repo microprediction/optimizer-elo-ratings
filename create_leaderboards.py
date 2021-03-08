@@ -33,7 +33,7 @@ def get_html_table_rows(data):
     html = "<tr><th>Name</th><th>Rating</th><th>Games</th><th>Active</th> </tr>"
     for name, (rating,count,active) in data_dict.items():
         active_str = 'yes' if active else 'no'
-        html += f"<tr><td>{name}</td><td>{round(rating, 3)}</td><td>{round(count, 0)}</td><td>{active_str}</td></tr>"
+        html += f"<tr><td>{name.replace('_cube_','').replace('_cube','')}</td><td>{round(rating, 3)}</td><td>{round(count, 0)}</td><td>{active_str}</td></tr>"
     return html
 
 

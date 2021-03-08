@@ -164,6 +164,12 @@ def update_optimizer_elo_ratings_once(pattern=None):
 
 
 if __name__=='__main__':
-    update_optimizer_elo_ratings_once()
+    import time 
+    st = time.time()
+    while True:
+        update_optimizer_elo_ratings_once()
+        time.sleep(10)
+        if time.time()-st>180:
+            break
 
 

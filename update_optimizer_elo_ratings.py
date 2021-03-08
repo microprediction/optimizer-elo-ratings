@@ -14,7 +14,7 @@ N_DIM_CHOICES = [ 2,3,5,8,13,21,34, 55, 89 ]
 N_TRIALS_CHOICES = [ 130, 210, 340, 550 ]
 
 # TEMPORARY HACK
-if True:
+if False:
     N_DIM_CHOICES = [ 3, 5, 8 ]
     N_TRIALS_CHOICES = [ 50, 80, 130 ]
 

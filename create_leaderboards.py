@@ -64,6 +64,7 @@ def get_html_str(file, data, navbar):
     <div class="left">{navbar}</div>
     <div class="right">
         <h1>Optimizer Elo Ratings</h1>
+        Produced by <a href="https://github.com/microprediction/optimizer-elo-ratings">optimizer-elo-ratings</a> 
         <h3>Class of objective functions: {args[0]}</h3>
         <h3>Dimension {args[1][1:]}</h3>
         <h3>Function evaluation limit: {args[2][1:]}</h3>

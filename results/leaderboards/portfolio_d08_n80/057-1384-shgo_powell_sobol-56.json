@@ -1,1 +1,1 @@
-{"name": "shgo_powell_sobol_cube", "package": "shgo", "strategy": "shgo_powell_sobol", "traceback": "Black took 51 function evals when instructed to use 81"}
+{"name": "shgo_powell_sobol_cube", "package": "shgo", "strategy": "shgo_powell_sobol", "traceback": "passing"}

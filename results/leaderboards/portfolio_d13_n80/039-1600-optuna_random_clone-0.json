@@ -1,1 +1,1 @@
-{"name": "optuna_random_cube_clone", "package": "optuna", "strategy": "optuna_random_clone", "traceback": "not yet run"}
+{"name": "optuna_random_cube_clone", "package": "optuna", "strategy": "optuna_random_clone", "traceback": "passing"}

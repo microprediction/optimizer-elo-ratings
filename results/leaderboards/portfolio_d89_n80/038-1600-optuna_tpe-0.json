@@ -1,1 +1,1 @@
-{"name": "optuna_tpe_cube", "package": "optuna", "strategy": "optuna_tpe", "traceback": "not yet run"}
+{"name": "optuna_tpe_cube", "package": "optuna", "strategy": "optuna_tpe", "traceback": "passing"}

@@ -1,0 +1,1 @@
+{"n_dim": 2, "n_trials": 130, "objective": "markowitz_skew_on_cube", "white": "shgo_nelder_sobol", "black": "pysot_lcb", "traceback": ["passing", "passing"], "best_val": [-0.0059106234131068615, null], "best_x": [[0.0, 1.0], null], "feval_count": [217, null], "n_trials_instructed": [30, null], "passing": [true, null], "completed": false, "winner": "incomplete", "points": null}

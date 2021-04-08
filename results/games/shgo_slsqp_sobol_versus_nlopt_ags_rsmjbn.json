@@ -1,0 +1,1 @@
+{"n_dim": 2, "n_trials": 210, "objective": "markowitz_skew_on_cube", "white": "shgo_slsqp_sobol", "black": "nlopt_ags", "traceback": ["passing", "passing"], "best_val": [-0.06321795116720832, null], "best_x": [[1.0, 0.0], null], "feval_count": [261, null], "n_trials_instructed": [49, null], "passing": [true, null], "completed": false, "winner": "incomplete", "points": null}

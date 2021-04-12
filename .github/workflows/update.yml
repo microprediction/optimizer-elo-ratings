@@ -36,6 +36,7 @@ jobs:
             pip install ultraopt
             pip install hyperopt
             pip install dlib 
+            pip install py-bobyqa
             
       - name: update elo ratings and test
         run: |

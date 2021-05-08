@@ -1,1 +1,1 @@
-{"name": "scipy_lbfgsb_cube", "package": "scipy", "strategy": "scipy_lbfgsb", "traceback": "Black took 491 function evals when instructed to use 552"}
+{"name": "scipy_lbfgsb_cube", "package": "scipy", "strategy": "scipy_lbfgsb", "traceback": "passing"}

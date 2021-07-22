@@ -7,10 +7,9 @@ This repo assigns Elo ratings ([json](https://github.com/microprediction/optimiz
 See the [article](https://www.microprediction.com/blog/humpday) for a detailed description of methodology. 
 
 
-### View Leaderboards
+### Elo rating leaderboards
 
-- HTML: [overall leaderboard](https://microprediction.github.io/optimizer-elo-ratings/html_leaderboards/overall.html) 
-- JSON: [leaderboards](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards) 
+In [human readable html](https://microprediction.github.io/optimizer-elo-ratings/html_leaderboards/overall.html) and, of course, [machine readable JSON](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards) 
 
 ### What's a strategy?
 

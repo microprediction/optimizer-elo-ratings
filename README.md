@@ -2,11 +2,10 @@
 
 Behold a [colab notebook](https://github.com/microprediction/humpday/blob/main/black_box_optimization_package_recommender.ipynb) that recommends a black-box optimizer for your objective function. 
 
-See [article](https://www.microprediction.com/blog/humpday). This repo assigns Elo ratings ([json](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards/overall) and [html](https://microprediction.github.io/optimizer-elo-ratings/html_leaderboards/overall.html)) to global derivative-free Python global optimization "strategies", using the [HumpDay](https://github.com/microprediction/humpday) package. There's no free lunch. 
+This repo assigns Elo ratings ([json](https://github.com/microprediction/optimizer-elo-ratings/tree/main/results/leaderboards/overall) and [html](https://microprediction.github.io/optimizer-elo-ratings/html_leaderboards/overall.html)) to global derivative-free Python global optimization "strategies", using the [HumpDay](https://github.com/microprediction/humpday) package. 
 
+See the [article](https://www.microprediction.com/blog/humpday) for a detailed description of methodology. 
 
-
-![](https://i.imgur.com/WgL7NCC.png)
 
 ### View Leaderboards
 
@@ -25,3 +24,6 @@ A choice of python package (such as scipy.optimize, ax-platform, hyperopt, never
 ### Contribute
 
 Got a good objective function, or optimization strategy? Shove it in the [HumpDay](https://github.com/microprediction/humpday) package and file a pull request, or at least suggest it in the issues. 
+
+
+![](https://i.imgur.com/WgL7NCC.png)

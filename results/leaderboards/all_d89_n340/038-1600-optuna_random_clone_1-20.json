@@ -1,1 +1,1 @@
-{"name": "optuna_random_cube_clone_1", "package": "optuna", "strategy": "optuna_random_clone_1", "traceback": "Black took 341 function evals when instructed to use 341"}
+{"name": "optuna_random_cube_clone_1", "package": "optuna", "strategy": "optuna_random_clone_1", "traceback": "passing"}

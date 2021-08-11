@@ -1,0 +1,1 @@
+{"n_dim": 2, "n_trials": 210, "objective": "markowitz_skew_on_cube", "white": "shgo_powell_sobol", "black": "bayesopt_ei", "traceback": ["passing", "passing"], "best_val": [-0.027076452482115817, null], "best_x": [[0.0, 1.0], null], "feval_count": [400, null], "n_trials_instructed": [49, null], "passing": [true, null], "completed": false, "winner": "incomplete", "points": null}

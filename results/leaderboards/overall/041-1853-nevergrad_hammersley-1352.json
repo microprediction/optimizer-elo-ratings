@@ -1,1 +1,1 @@
-{"name": "nevergrad_hammersley_cube", "package": "nevergrad", "strategy": "nevergrad_hammersley", "traceback": "Black took 601 function evals when instructed to use 600"}
+{"name": "nevergrad_hammersley_cube", "package": "nevergrad", "strategy": "nevergrad_hammersley", "traceback": "passing"}

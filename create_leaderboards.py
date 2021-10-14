@@ -37,6 +37,7 @@ def get_html_table_rows(data):
     return html
 
 
+
 # For overall.json
 def get_overall_html_str(file, data, navbar):
     return f"""<html>
@@ -44,13 +45,17 @@ def get_overall_html_str(file, data, navbar):
 <body>
     <div class="left">{navbar}</div>
     <div class="right">
-        <h1>Overall Optimizer Elo Leaderboard for {file}</h1>
+        <h1>Overall Optimizer Elo Leaderboard</h1>
+ Produced by <a href="https://github.com/microprediction/optimizer-elo-ratings">optimizer-elo-ratings</a> using
+    the <a href="https://github.com/microprediction/humpday">humpday</a> package. See the <a href="https://www.microprediction.com/blog/humpday">article</a>.<br>
         <table class="default-table">
             {get_html_table_rows(data)}
         </table>
     </div>
 </body>
 </html>"""
+
+
 
 # For all the other jsons
 def get_html_str(file, data, navbar):
@@ -64,7 +69,8 @@ def get_html_str(file, data, navbar):
     <div class="left">{navbar}</div>
     <div class="right">
         <h1>Optimizer Elo Ratings</h1>
-        Produced by <a href="https://github.com/microprediction/optimizer-elo-ratings">optimizer-elo-ratings</a> 
+    Produced by <a href="https://github.com/microprediction/optimizer-elo-ratings">optimizer-elo-ratings</a> using
+    the <a href="https://github.com/microprediction/humpday">humpday</a> package. See the <a href="https://www.microprediction.com/blog/humpday">article</a>. 
         <h3>Class of objective functions: {args[0]}</h3>
         <h3>Dimension {args[1][1:]}</h3>
         <h3>Function evaluation limit: {args[2][1:]}</h3>
@@ -77,7 +83,7 @@ def get_html_str(file, data, navbar):
 
 def get_html_navbar(json_names):
     div = "<h3>Leaderboards</h3>"
-    for name in json_names:
+    for name in sorted(json_names):
         name_html = name.replace(".json", ".html")
         div += f"<a href='{name_html}'>{name.replace('.json','')}</a>"
     return div
@@ -85,7 +91,7 @@ def get_html_navbar(json_names):
 # For index.html
 def get_index_html_str(json_names):
     navbar = "<h3>Leaderboards</h3>"
-    for name in json_names:
+    for name in sorted(json_names):
         name_html = name.replace(".json", ".html")
         navbar += f"<a href='html_leaderboards/{name_html}'>{name}</a>"
     return f"""<html>

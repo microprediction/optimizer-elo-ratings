@@ -1,4 +1,5 @@
 #lynx -dump -source https://microprediction.github.io/optimizer-elo-ratings/ > source.html
+#This script provided by Oliver
 
 for k in `seq 1 20`
 do

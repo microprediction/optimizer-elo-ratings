@@ -1,6 +1,6 @@
 from update_optimizer_elo_ratings import update_optimizer_elo_ratings_once
 
-PATTERN = None # 'e.g. hebo'
+PATTERN = 'freelunch' # 'e.g. hebo'
 
 if __name__=='__main__':
     while True:

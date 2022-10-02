@@ -1,0 +1,1 @@
+{"n_dim": 2, "n_trials": 130, "objective": "markowitz_analytic_on_cube", "white": "scipy_lbfgsb", "black": "bobyqa_default", "traceback": ["passing", "passing"], "best_val": [0.6076672809316561, null], "best_x": [[1.0, 0.0], null], "feval_count": [154, null], "n_trials_instructed": [30, null], "passing": [true, null], "completed": false, "winner": "incomplete", "points": null}

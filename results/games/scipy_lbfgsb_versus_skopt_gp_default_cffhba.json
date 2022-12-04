@@ -1,0 +1,1 @@
+{"n_dim": 2, "n_trials": 130, "objective": "markowitz_skew_on_cube", "white": "scipy_lbfgsb", "black": "skopt_gp_default", "traceback": ["passing", "passing"], "best_val": [-0.007144669711742465, null], "best_x": [[0.0, 1.0], null], "feval_count": [208, null], "n_trials_instructed": [30, null], "passing": [true, null], "completed": false, "winner": "incomplete", "points": null}
